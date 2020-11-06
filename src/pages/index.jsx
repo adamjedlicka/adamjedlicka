@@ -1,14 +1,16 @@
 import React from 'react'
 import DefaultLayout from '../layouts/default'
-import headshot from '../assets/headshot.jpeg'
+import Seo from '../components/Seo'
 
 export default function Home() {
   return (
     <DefaultLayout>
+      <Seo />
+
       <div class="flex flex-col sm:flex-row mx-auto -mx-32">
         <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
           <div class="w-20 h-20 inline-flex items-center justify-center">
-            <img src={headshot} alt="headshot" class="rounded-full" width="80" height="80" />
+            <img src="/images/headshot.jpeg" alt="headshot" class="rounded-full" width="80" height="80" />
           </div>
           <div class="flex flex-col items-center text-center justify-center">
             <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Adam Jedlička</h2>

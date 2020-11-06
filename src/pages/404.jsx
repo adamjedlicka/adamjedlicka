@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import DefaultLayout from '../layouts/default'
+import Seo from '../components/Seo'
 
 export default function NotFound() {
   return (
     <DefaultLayout>
+      <Seo title="Page not found" />
+
       <div class="py-32 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
         <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">404 - Page not found</h1>
         <Link

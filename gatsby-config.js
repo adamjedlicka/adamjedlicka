@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Title from siteMetadata',
+    title: 'Adam Jedlička',
   },
   plugins: [
     'gatsby-plugin-preact',
     'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
