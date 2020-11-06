@@ -2,24 +2,24 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer class="text-gray-700 body-font">
-      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <p class="text-sm text-gray-500 sm:py-2 sm:mt-0 mt-4">
+    <footer className="text-gray-700 body-font">
+      <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <p className="text-sm text-gray-500 sm:py-2 sm:mt-0 mt-4">
           © 2020 Adam Jedlička —
-          <a href="mailto:adajedlicka@gmail.com" class="text-gray-600 hover:text-gray-800 ml-1">
+          <a href="mailto:adajedlicka@gmail.com" className="text-gray-600 hover:text-gray-800 ml-1">
             adajedlicka@gmail.com
           </a>
         </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a
             href="https://github.com/adamjedlicka"
-            class="ml-3 text-gray-500 hover:text-gray-700"
+            className="ml-3 text-gray-500 hover:text-gray-700"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-github"
+              className="icon icon-tabler icon-tabler-brand-github"
               width="20"
               height="20"
               viewBox="0 0 24 24"
@@ -36,13 +36,13 @@ export default function Footer() {
 
           <a
             href="https://www.linkedin.com/in/adamjedlicka"
-            class="ml-3 text-gray-500 hover:text-gray-700"
+            className="ml-3 text-gray-500 hover:text-gray-700"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-linkedin"
+              className="icon icon-tabler icon-tabler-brand-linkedin"
               width="20"
               height="20"
               viewBox="0 0 24 24"
@@ -63,13 +63,13 @@ export default function Footer() {
 
           <a
             href="https://www.facebook.com/adamjedlicka"
-            class="ml-3 text-gray-500 hover:text-gray-700"
+            className="ml-3 text-gray-500 hover:text-gray-700"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-facebook"
+              className="icon icon-tabler icon-tabler-brand-facebook"
               width="20"
               height="20"
               viewBox="0 0 24 24"

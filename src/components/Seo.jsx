@@ -11,6 +11,7 @@ export default function Seo({ title }) {
 
   return (
     <Helmet title={seo.title}>
+      <html lang="en" />
       <link rel="icon" type="image/png" href="/favicon.png" />
     </Helmet>
   )
