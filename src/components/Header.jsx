@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 export default function Header() {
   return (
     <header className="text-gray-700 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div className="container max-w-3xl mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link to="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <span className="text-xl">Adam Jedlička</span>
         </Link>
