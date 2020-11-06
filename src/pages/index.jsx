@@ -7,7 +7,7 @@ export default function Home() {
     <DefaultLayout>
       <Seo />
 
-      <div class="flex flex-col sm:flex-row mx-auto -mx-32">
+      <div class="flex flex-col sm:flex-row mx-auto">
         <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
           <div class="w-20 h-20 inline-flex items-center justify-center">
             <img src="/images/headshot.jpeg" alt="headshot" class="rounded-full" width="80" height="80" />
