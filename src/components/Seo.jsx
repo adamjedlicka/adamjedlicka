@@ -9,8 +9,6 @@ export default function Seo({ title }) {
     title: title || site.siteMetadata.title,
   }
 
-  console.log(seo)
-
   return (
     <Helmet title={seo.title}>
       <link rel="icon" type="image/png" href="/favicon.png" />
