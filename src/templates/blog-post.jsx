@@ -2,27 +2,29 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import DefaultLayout from '../layouts/default'
 import Seo from '../components/Seo'
+import Content from '../components/Content'
+import { toHuman } from '../utils/DateUtils'
 
 export default function BlogPost({ data }) {
-  const post = data.markdownRemark
+  const { post } = data
 
   return (
     <DefaultLayout>
       <Seo title={post.frontmatter.title} />
 
-      <div className="prose max-w-none mt-8">
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <h1 className="text-4xl text-gray-900 mt-8 font-bold">{post.frontmatter.title}</h1>
+      <div className="text-gray-500 mt-1 mb-8">{toHuman(post.frontmatter.date)}</div>
+      <Content content={post.html} />
     </DefaultLayout>
   )
 }
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    post: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        date
         title
       }
     }
