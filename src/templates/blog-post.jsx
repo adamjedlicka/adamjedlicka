@@ -13,6 +13,7 @@ export default function BlogPost({ data }) {
       <Seo title={post.frontmatter.title} />
 
       <h1 className="text-4xl text-gray-900 mt-8 font-bold">{post.frontmatter.title}</h1>
+      <div className="tracking-widest font-medium text-gray-900 mt-4">{post.frontmatter.category}</div>
       <div className="text-gray-500 mt-1 mb-8">{toHuman(post.frontmatter.date)}</div>
       <Content content={post.html} />
     </DefaultLayout>
@@ -25,6 +26,7 @@ export const query = graphql`
       html
       frontmatter {
         date
+        category
         title
       }
     }

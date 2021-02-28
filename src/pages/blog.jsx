@@ -5,14 +5,14 @@ import PostPreview from '../components/PostPreview'
 import Seo from '../components/Seo'
 
 export default function Blog({ data }) {
-  const nodes = data.allMarkdownRemark.nodes
+  const posts = data.allMarkdownRemark.nodes
 
   return (
     <DefaultLayout>
       <Seo title="Blog" />
 
-      {nodes.map(node => (
-        <PostPreview node={node} />
+      {posts.map(post => (
+        <PostPreview post={post} />
       ))}
     </DefaultLayout>
   )
