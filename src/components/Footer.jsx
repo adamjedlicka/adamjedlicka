@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="text-gray-700 body-font">
       <div className="container max-w-3xl px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <p className="text-sm text-gray-500 sm:py-2 sm:mt-0 mt-4">
-          © 2020 - 2021 Adam Jedlička —
+          © 2020 - 2021 <strong>Adam Jedlička</strong> —
           <a href="mailto:mail@adamjedlicka.cz" className="text-gray-600 hover:text-gray-800 ml-1">
             mail@adamjedlicka.cz
           </a>
