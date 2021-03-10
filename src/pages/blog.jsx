@@ -12,7 +12,7 @@ export default function Blog({ data }) {
       <Seo title="Blog" />
 
       {posts.map(post => (
-        <PostPreview post={post} />
+        <PostPreview post={post} key={post.id} />
       ))}
     </DefaultLayout>
   )
@@ -22,6 +22,7 @@ export const query = graphql`
   query {
     allMarkdownRemark {
       nodes {
+        id
         excerpt
         frontmatter {
           date

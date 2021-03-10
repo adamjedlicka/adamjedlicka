@@ -4,12 +4,12 @@ import Footer from '../components/Footer'
 
 export default function DefaultLayout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <section className="flex-1 text-gray-700 body-font">
-        <div className="container max-w-3xl px-5 mx-auto">{children}</div>
-      </section>
-      <Footer />
+    <div className="container mx-auto">
+      <div className="flex flex-col lg:w-4/6 mx-auto min-h-screen">
+        <Header />
+        <section className="p-4 flex-1 text-gray-700 body-font">{children}</section>
+        <Footer />
+      </div>
     </div>
   )
 }
