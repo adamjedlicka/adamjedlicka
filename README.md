@@ -8,4 +8,4 @@ One of my favourite subject are programming languages themselves. I've written n
 
 Even though in my professional career I do mostly frontend work in Vue.js, I still prefer backend because of its complexity, broader variety and my suckiness in design.
 
-i use arch btw
+i used arch btw
